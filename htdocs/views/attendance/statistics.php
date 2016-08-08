@@ -18,7 +18,7 @@ $this->params['breadcrumbs'][] = $this->title;
 ?>
 
 <div class="queue-display container">
-    <div class="col-md-8 col-md-offset-2">    
+    <div class="col-md-8 col-md-offset-2">
         <div class="panel panel-default">
             <div class="panel-heading">
                 <h3 class="panel-title">Total Statistics of Attended Clients Registered by the system</h3>
@@ -36,8 +36,43 @@ $this->params['breadcrumbs'][] = $this->title;
                         'format' => ['date', 'php:d M Y'],
                     ],
                     [
-                        'attribute' => 'Clients',
-                        'label' => 'Total Clients',
+                        'attribute' => 'MainEntrance',
+                        'label' => 'Main Entrance',
+                        'hAlign' => 'center',
+                        'vAlign' => 'middle',
+                        'width' => '10px',
+                    ],
+                    [
+                        'attribute' => 'A-L',
+                        'label' => 'A to L',
+                        'hAlign' => 'center',
+                        'vAlign' => 'middle',
+                        'width' => '10px',
+                    ],
+                    [
+                        'attribute' => 'M-Z',
+                        'label' => 'M to Z',
+                        'hAlign' => 'center',
+                        'vAlign' => 'middle',
+                        'width' => '10px',
+                    ],
+                    [
+                        'attribute' => 'Total',
+                        'label' => 'Total come to Dropin',
+                        'hAlign' => 'center',
+                        'vAlign' => 'middle',
+                        'width' => '10px',
+                    ],
+                    [
+                        'attribute' => 'SeenLawyer',
+                        'label' => 'Seen Lawyer',
+                        'hAlign' => 'center',
+                        'vAlign' => 'middle',
+                        'width' => '10px',
+                    ],
+                    [
+                        'attribute' => 'SeenDoctor',
+                        'label' => 'Seen Doctor',
                         'hAlign' => 'center',
                         'vAlign' => 'middle',
                         'width' => '10px',

@@ -5,23 +5,21 @@ namespace app\models;
 use Yii;
 use yii\base\Model;
 use yii\data\ActiveDataProvider;
-use app\models\Statistics;
+use app\models\Dropin;
 
 /**
- * StatisticsSearch represents the model behind the search form about `app\models\Attendance`.
+ * DropinSearch represents the model behind the search form about `app\models\Dropin`.
  */
-class StatisticsSearch extends Statistics
+class DropinSearch extends Dropin
 {
     /**
      * @inheritdoc
      */
-
-    public $Clients;
-
     public function rules()
     {
         return [
-          [['DropinDate', 'MainEntrance', 'A-L', 'M-Z', 'SeenDoctor', "SeenLawyer", 'Total'], 'safe'],
+            [['ID'], 'integer'],
+            [['DropinDate', 'MainEntrance'], 'safe'],
         ];
     }
 
@@ -43,10 +41,7 @@ class StatisticsSearch extends Statistics
      */
     public function search($params)
     {
-
-        $query = Statistics::find();
-        $query->all();
-
+        $query = Dropin::find();
 
         $dataProvider = new ActiveDataProvider([
             'query' => $query,
@@ -55,17 +50,18 @@ class StatisticsSearch extends Statistics
         $this->load($params);
 
         if (!$this->validate()) {
+            // uncomment the following line if you do not want to return any records when validation fails
+            // $query->where('0=1');
             return $dataProvider;
         }
 
+        $query->andFilterWhere([
+            'ID' => $this->ID,
+            'DropinDate' => $this->DropinDate,
+        ]);
+
+        $query->andFilterWhere(['like', 'MainEntrance', $this->MainEntrance]);
 
         return $dataProvider;
     }
-
-
-
-
-
-
-
 }

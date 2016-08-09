@@ -7,6 +7,8 @@ use yii\helpers\Html;
 //use yii\grid\GridView;
 use kartik\grid\GridView;
 use yii\helpers\Url;
+use kartik\export\ExportMenu;
+
 
 /* @var $this yii\web\View */
 /* @var $searchModel app\models\StatisticsSearch */
@@ -78,7 +80,20 @@ $this->params['breadcrumbs'][] = $this->title;
                         'width' => '10px',
                     ],
                 ];
+
+
+                echo ExportMenu::widget([
+                    'dataProvider' => $dataProvider,
+                    'columns' => $gridColumns,
+                    'fontAwesome' => true,
+                    'dropdownOptions' => [
+                        'label' => 'Export All',
+                        'class' => 'btn btn-default'
+                    ]
+                ])
+
                 ?>
+
 
 
                 <?=

@@ -17,9 +17,6 @@
             <a href="<?= \yii\helpers\Url::to(['/user/admin']) ?>" class="small-box-footer">
                 Manage <i class="fa fa-arrow-circle-right"></i>
             </a>
-            <a href="<?= \yii\helpers\Url::to(['/backuprestore/admin']) ?>" class="small-box-footer">
-                Manage <i class="fa fa-arrow-circle-right"></i>
-            </a>
         </div>
     </div>
     <!-- ./col -->
@@ -118,38 +115,5 @@
         <!-- /.box -->
     </div>
 
-    <div class="col-sm-6">
-        <!-- Default box -->
-        <div class="box">
-            <div class="box-header">
-                <h3 class="box-title">Online Documentation</h3>
-            </div>
-            <div class="box-body">
-                <div class="alert alert-warning">
-                    <i class="fa fa-warning"></i>
-                    <b>Notice!</b> Use <code>./yii app/setup-docs</code> and <code>./yii app/generate-docs</code> to
-                    create the local HTML documentation for this application.
-                </div>
-                <p>
 
-                    <?= yii\helpers\Html::a(
-                        'Phundament Guide',
-                        'http://phundament.com/docs',
-                        ['target' => '_blank', 'class' => 'btn btn-default btn-block btn-flat']
-                    ); ?>
-
-                </p>
-            </div>
-            <!-- /.box-body -->
-            <div class="box-footer">
-                <small>Need help? Get <?= yii\helpers\Html::a(
-                        'support',
-                        'mailto:' . \Yii::$app->params['supportEmail']
-                    ); ?>.
-                </small>
-            </div>
-            <!-- /.box-footer-->
-        </div>
-        <!-- /.box -->
-    </div>
 </div>

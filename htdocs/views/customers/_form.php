@@ -34,14 +34,15 @@ $iconsLawyer = [
 
     <div class="col-md-8">
         <?php
-        // echo $form->field($model, 'FirstDropin')->widget(DateControl::classname(), [
-        //     'type' => DateControl::FORMAT_DATE,
-        //     'displayFormat' => 'php:d M Y',
-        //     'saveFormat' => 'php:Y-m-d',
-        // ]);
 
-        echo $form->field($model, 'FirstDropin')->dropDownList(ArrayHelper::map(Dropin::find()->orderBy('DropinDate')->all(), 'DropinDate','DropinDateFormated'));
-
+         $time = new \DateTime('now');
+         $today = $time->format('Y-m-d');
+         echo $form->field($model, 'FirstDropin')
+                                               ->dropDownList(ArrayHelper::map(Dropin::find()
+                                                 ->where(['<=', 'DropinDate' ,$today])
+                                                 ->orderBy(['DropinDate' => SORT_DESC])
+                                                 ->all(),
+                                    'DropinDate','DropinDateFormated'));
 
         echo $form->field($model, 'ConfirmationDate')->widget(DateControl::classname(), [
             'type' => DateControl::FORMAT_DATE,

@@ -1,6 +1,6 @@
 <?php
 
-use \Dotenv;
+use \Dotenv as Dotenv;
 
 Dotenv::load(__DIR__.'/..');
 Dotenv::required('YII_DEBUG',['0','1','true']);

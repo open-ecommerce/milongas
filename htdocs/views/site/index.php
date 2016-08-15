@@ -9,7 +9,6 @@ $bundle = AppAsset::register($this);
 $imgPath = $bundle->baseUrl;
 
 
-
 $this->title = 'NNLS Drop-in Application';
 ?>
 <div class="site-index ">
@@ -22,7 +21,7 @@ $this->title = 'NNLS Drop-in Application';
                 <div class="col-md-12 text-center">
                     <div>
                         <div id="hero">
-                            <?= Html::img($imgPath . '/img/dropin-logo.jpg', ['alt' => 'Helptext Helpline Solution for NNLS']) ?>                            
+                            <?= Html::img($imgPath . '/img/dropin-logo.jpg', ['alt' => 'Helptext Helpline Solution for NNLS']) ?>
                         </div>
                     </div>
                     <br>

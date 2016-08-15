@@ -1,7 +1,14 @@
 <?php
 /* @var $this yii\web\View */
 
+use app\assets\AppAsset;
+use app\widgets\Alert;
 use yii\helpers\Html;
+
+$bundle = AppAsset::register($this);
+$imgPath = $bundle->baseUrl;
+
+
 
 $this->title = 'NNLS Drop-in Application';
 ?>
@@ -15,8 +22,8 @@ $this->title = 'NNLS Drop-in Application';
                 <div class="col-md-12 text-center">
                     <div>
                         <div id="hero">
-                            <?= Html::img('/media/dropin-logo.jpg') ?>
-                        </div>                
+                            <?= Html::img($imgPath . '/img/dropin-logo.jpg', ['alt' => 'Helptext Helpline Solution for NNLS']) ?>                            
+                        </div>
                     </div>
                     <br>
                     <p class="lead">We are developing this system and your help it is very important.</p>
@@ -25,4 +32,3 @@ $this->title = 'NNLS Drop-in Application';
         </div>
     </div>
 </div>
-

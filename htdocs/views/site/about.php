@@ -16,9 +16,9 @@ $this->params['breadcrumbs'][] = $this->title;
                     <div class="row">
                       <div class="large-6 columns">
                         <h3> How can we help you?</h3>
-                        <p>If you are thinking of adding text to your helpline, please contact us.</p>
+                        <p>If you are thinking of adding a system to the organization you work, please contact us.</p>
                         <p> We will help you with our expertise and build a system to cater for your needs.</p>
-                        <p>Send us an email to <a href="mailto:info@helptext.uk?Subject=Landing Page" target="_top">info@helptext.uk</a> or text us to 07879387106, and we will get back to you within 24 hours.</p>
+                        <p>Send us an email to <a href="mailto:info@open-ecommerce.org?Subject=Landing Page" target="_top">info@open-ecommerce.org</a> or text us to 07879387106, and we will get back to you within 24 hours.</p>
                       <br>
                         <a target="_blank" href="http://www.open-ecommerce.org">
                             <img src="/assets/img/logos/powered-by-open-ecommerce-org.png" alt="Open-ecommerce.org" class="oe">

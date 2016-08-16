@@ -46,6 +46,7 @@
         "mikehaertl/php-shellcommand": "1.*",
         "vlucas/phpdotenv": "1.1.*",
         "yiisoft/yii2": "2.0.*",
+        "kartik-v/yii2-dynagrid": "@dev",
         "yiisoft/yii2-bootstrap": "2.*",
         "yiisoft/yii2-composer": "*",
         "yiisoft/yii2-swiftmailer": "2.*",
@@ -57,7 +58,11 @@
         "kartik-v/yii2-datecontrol": "dev-master",
         "kartik-v/yii2-export": "dev-master",
         "spanjeta/yii2-backup": "*",
-        "open-ecommerce/yii2-backuprestore": "dev-master"
+        "open-ecommerce/yii2-backuprestore": "dev-master",
+        "bower-asset/font-awesome": "^4.5",
+        "bower-asset/motion-ui": "^1.2.2",
+        "bower-asset/what-input": "^1.1",
+        "bower-asset/admin-lte": "*"
     },
     "require-dev": {
         "yiisoft/yii2-apidoc": "2.*",

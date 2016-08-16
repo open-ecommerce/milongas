@@ -10,7 +10,10 @@ use yii\widgets\Breadcrumbs;
 /* @var $this \yii\web\View */
 /* @var $content string */
 $this->title = $this->title . ' - ' . Yii::$app->params['appName'];
-AppAsset::register($this);
+
+$bundle = AppAsset::register($this);
+$imgPath = $bundle->baseUrl;
+
 ?>
 <?php $this->beginPage() ?>
 <!DOCTYPE html>
@@ -81,15 +84,7 @@ AppAsset::register($this);
             );
             NavBar::end();
             ?>
-            <div class="container">
-                <?=
-                Breadcrumbs::widget(
-                        [
-                            'links' => isset($this->params['breadcrumbs']) ? $this->params['breadcrumbs'] : [],
-                        ]
-                )
-                ?>
-            </div>
+<?= '<div id="top-header"></div>' ?>
 <?= Alert::widget() ?>
 <?= $content ?>
         </div>
@@ -103,7 +98,7 @@ AppAsset::register($this);
 
                 <p class="pull-left"><?=
                     Html::a(
-                            Html::img(Yii::getAlias('@frontmedia') . '/powered-by-open-ecommerce-org.png', ['alt' => 'open-ecommerce.org']), '#', ['data-toggle' => 'modal', 'data-target' => '#infoModal']
+                            Html::img($imgPath . '/img/powered-by-open-ecommerce-org.png', ['alt' => 'open-ecommerce.org']), '#', ['data-toggle' => 'modal', 'data-target' => '#infoModal']
                     )
                     ?></p>
             </div>

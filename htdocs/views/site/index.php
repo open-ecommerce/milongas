@@ -2,32 +2,36 @@
 /* @var $this yii\web\View */
 
 use app\assets\AppAsset;
-use app\widgets\Alert;
 use yii\helpers\Html;
 
 $bundle = AppAsset::register($this);
 $imgPath = $bundle->baseUrl;
 
-
-$this->title = 'NNLS Drop-in Application';
+$this->title = 'Demo Drop-in Application';
 ?>
 <div class="site-index ">
     <div class="header vert">
-        <h2 class="lead">Welcome to the Open-ecommerce Drop In System</h2>
-    </div>
-    <div class="featurette">
         <div class="container">
-            <div class="row">
-                <div class="col-md-12 text-center">
-                    <div>
-                        <div id="hero">
-                            <?= Html::img($imgPath . '/img/dropin-demo-hero.jpg', ['alt' => 'Drop-in Demo Solution']) ?>
-                        </div>
-                    </div>
-                    <br>
-                    <p class="lead">We are allways improuving this system and your help it is very important.</p>
-                </div>
-            </div>
+            <h1>Drop-in Demo</h1>
+            <p class="lead">We are allways improving this system and your help it is very important</p>
+            <br>
+        <div>
+            <a href="/"
+            class="btn btn-primary btn-lg">Tutorial</a>
+        </div>
+
         </div>
     </div>
+
+<br><br><br><br>
+
+<p class="text-center"><?=
+    Html::a(
+            Html::img($imgPath . '/img/open-ecommerce-at-github-social-coding.png', ['alt' => 'open-ecommerce.org']), 'https://github.com/open-ecommerce'
+    )
+    ?>
+</p>
+
+<br><br><br><br>
+
 </div>

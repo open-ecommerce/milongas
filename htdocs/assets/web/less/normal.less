@@ -1,0 +1,67 @@
+@base: #f938ab;
+
+.box-shadow(@style, @c) when (iscolor(@c)) {
+  -webkit-box-shadow: @style @c;
+  box-shadow:         @style @c;
+}
+.box-shadow(@style, @alpha: 50%) when (isnumber(@alpha)) {
+  .box-shadow(@style, rgba(0, 0, 0, @alpha));
+}
+.box {
+  color: saturate(@base, 5%);
+  border-color: lighten(@base, 30%);
+  div { .box-shadow(0 0 5px, 30%) }
+}
+
+
+/* -- end custom css for Bootstrap 3.x --*/
+a.navbar-brand {
+  background: #262626 url("../img/dropin-logo-s.jpg") no-repeat;
+  width: 344px;
+}
+.container {
+  width: 100%;
+}
+.btn-success {
+  float: right;
+}
+/*Fix the problem of label on top of datepicker*/
+.datepicker.datepicker-dropdown.dropdown-menu.datepicker-orient-left.datepicker-orient-top {
+  margin-top: 53px;
+}
+/*Fix the hight of only 3 items in multiselect*/
+.form-control.input-multiselect {
+  height: 110px !important;
+  min-height: 110px !important;
+}
+span.glyphicon.glyphicon-pushpin.edit-today {
+  font-size: 1.8em;
+}
+.panel-default > .panel-heading {
+  color: #333;
+  background-color: #DCF0D5;
+  border-color: #B4DFA5;
+}
+.glyphicon {
+  /*    font-size: 1.4em;*/
+}
+/* make homepage image responsive */
+div#hero img {
+  width: 100%;
+  max-width: 483px;
+}
+.nav > li > a {
+  padding: 10px 12px;
+}
+.breadcrumb {
+  margin-bottom: 2px;
+}
+@media (max-width: 950px) {
+  a.navbar-brand {
+    background: #262626 url("images/NNLS-logo-s.jpg") no-repeat;
+    width: 106px;
+  }
+}
+a.btn.btn-success.create-backup {
+  margin-right: 10px;
+}

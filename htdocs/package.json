@@ -1,0 +1,48 @@
+{
+  "name": "yii2-app-dropin",
+  "version": "1.0.0",
+  "description": "Yii2 Phundament4 application with Gulp and Less support",
+  "license": "MIT",
+  "main": "gulpfile.js",
+  "scripts": {
+    "start": "gulp",
+    "build": "gulp build --production"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:open-ecommerce/dropin.git"
+  },
+  "author": "open-ecommerce.org",
+  "homepage": "http://open-ecommerce.org",
+  "devDependencies": {
+    "babel-core": "^6.10.4",
+    "babel-plugin-transform-es2015-arrow-functions": "^6.5.2",
+    "babel-plugin-transform-es2015-block-scoped-functions": "^6.5.0",
+    "babel-plugin-transform-es2015-block-scoping": "^6.5.0",
+    "babel-plugin-transform-es2015-classes": "^6.5.2",
+    "babel-plugin-transform-es2015-destructuring": "^6.5.0",
+    "babel-plugin-transform-es2015-modules-commonjs": "^6.5.2",
+    "babel-plugin-transform-es2015-parameters": "^6.5.0",
+    "babel-plugin-transform-es2015-shorthand-properties": "^6.5.0",
+    "babel-plugin-transform-es2015-spread": "^6.5.2",
+    "babel-plugin-transform-es2015-template-literals": "^6.5.2",
+    "babel-preset-es2015": "^6.3.13",
+    "browser-sync": "^2.14.0",
+    "gulp": "gulpjs/gulp#4.0",
+    "gulp-autoprefixer": "^3.1.0",
+    "gulp-babel": "^6.1.2",
+    "gulp-concat": "^2.5.2",
+    "gulp-cssnano": "^2.1.0",
+    "gulp-extname": "^0.2.0",
+    "gulp-if": "^2.0.0",
+    "gulp-imagemin": "^3.0.1",
+    "gulp-less": "^3.0.0",
+    "gulp-load-plugins": "^1.2.4",
+    "gulp-rename": "^1.2.2",
+    "gulp-sourcemaps": "^1.6.0",
+    "gulp-uglify": "^1.2.0",
+    "js-yaml": "^3.4.6",
+    "rimraf": "^2.4.3",
+    "yargs": "^3.8.0"
+  }
+}

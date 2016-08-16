@@ -13,7 +13,7 @@ $this->title = 'NNLS Drop-in Application';
 ?>
 <div class="site-index ">
     <div class="header vert">
-        <h2 class="lead">Welcome to the Destitute Asylum Seekers Drop In System!</h2>
+        <h2 class="lead">Welcome to the Open-ecommerce Drop In System</h2>
     </div>
     <div class="featurette">
         <div class="container">
@@ -25,7 +25,7 @@ $this->title = 'NNLS Drop-in Application';
                         </div>
                     </div>
                     <br>
-                    <p class="lead">We are developing this system and your help it is very important.</p>
+                    <p class="lead">We are allways improuving this system and your help it is very important.</p>
                 </div>
             </div>
         </div>

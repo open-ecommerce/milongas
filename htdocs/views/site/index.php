@@ -21,7 +21,7 @@ $this->title = 'NNLS Drop-in Application';
                 <div class="col-md-12 text-center">
                     <div>
                         <div id="hero">
-                            <?= Html::img($imgPath . '/img/dropin-logo.jpg', ['alt' => 'Helptext Helpline Solution for NNLS']) ?>
+                            <?= Html::img($imgPath . '/img/dropin-demo-hero.jpg', ['alt' => 'Drop-in Demo Solution']) ?>
                         </div>
                     </div>
                     <br>

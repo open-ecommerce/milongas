@@ -13,7 +13,7 @@ $this->title = 'Demo Drop-in Application';
     <div class="header vert">
         <div class="container">
             <h1>Drop-in Demo</h1>
-            <p class="lead">We are allways improving this system and your help it is very important</p>
+            <p class="lead">We are always improving this system and your help is very important</p>
             <br>
         <div>
             <a href="/"

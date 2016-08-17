@@ -5,6 +5,8 @@
 ## Dropin
 Application to manage drop in sessions for grass roots organizations.
 
+### You can see a demo at: [dropin.open-ecommerce.org](http://dropin.open-ecommerce.org/)
+
 ### Latests [releses notes](relese-notes.md)
 
 ## Some technical features

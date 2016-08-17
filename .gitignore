@@ -3,8 +3,7 @@ assets/*
 runtime/*
 !runtime/.gitignore
 
-node_modules/
-dist/
+htdocs/node_modules/
 *.log
 nbproject/private/*
 *.bak
@@ -16,4 +15,4 @@ nbproject/private/*
 #project related
 local
 .env
-vendor
+htdocs/vendor

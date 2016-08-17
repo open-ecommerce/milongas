@@ -5,7 +5,7 @@
 ## Dropin
 Application to manage drop in sessions for grass roots organizations.
 
-## Releses Notes [Releses Notes](https://github.com/open-ecommerce/dropin/relese-notes.md)
+# [Releses Notes](relese-notes.md)
 
 ## Some technical features
 - Simplify configuration file by [Phundamental 4](https://github.com/phundament/app)

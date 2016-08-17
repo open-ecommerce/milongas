@@ -6839,6 +6839,16 @@ div#hero img {
 a.btn.btn-success.create-backup {
   margin-right: 10px;
 }
+.navbar-fixed-top ul .dropdown-menu {
+  background-color: #4F7033;
+}
+.navbar-fixed-top ul > li > ul > li > a:hover {
+  color: #4F7033;
+  background-color: #fff;
+}
+.navbar-fixed-top ul > li > a:focus {
+  color: #4F7033;
+}
 .header {
   height: 80%;
   background: #222222 url('../img/dropin-demo-hero.jpg') no-repeat center center;

@@ -5,7 +5,7 @@
 ## Dropin
 Application to manage drop in sessions for grass roots organizations.
 
-# [Releses Notes](relese-notes.md)
+### Latests [releses notes](relese-notes.md)
 
 ## Some technical features
 - Simplify configuration file by [Phundamental 4](https://github.com/phundament/app)

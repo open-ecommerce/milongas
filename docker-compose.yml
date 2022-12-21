@@ -1,0 +1,41 @@
+version: '2'
+services:
+  php:
+    image: yiisoftware/yii2-php:7.0-apache
+    volumes:
+      - ~/.composer-docker/cache:/root/.composer/cache:delegated
+      - ./htdocs/:/app/web:delegated
+    ports:
+      - '80:80'
+    networks:
+      - my-network
+  db:
+    image: mysql:5.7
+    restart: always
+    environment:
+      - DB_CONNECTION=mysql
+      - DB_HOST=db
+      - MYSQL_DATABASE=milonga
+      - MYSQL_USER=user
+      - MYSQL_PASSWORD=root
+      - MYSQL_ROOT_PASSWORD=root
+    ports:
+      - '3306:3306'
+    expose:
+      - '3306'
+    volumes:
+      - my-db:/var/lib/mysql
+    #volumes:
+    #  - ~/mysql:/var/lib/mysql
+    networks:
+      - my-network
+  memcached:
+    container_name: memcached
+    image: memcached:latest
+    ports:
+      - "0.0.0.0:11211:11211"
+volumes:
+  my-db:
+networks:
+  my-network:
+    driver: bridge

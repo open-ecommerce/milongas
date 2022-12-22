@@ -128,7 +128,7 @@ $this->params['breadcrumbs'][] = $this->title;
                 ],
                 'hover' => true,
                 'panel' => [
-                    'heading' => '<h3 class="panel-title"><i class="glyphicon glyphicon-user"></i> List of clients - ' . $this->title . '</h3>',
+                    'heading' => '<h3 class="panel-title"><i class="glyphicon glyphicon-user"></i> List of Dancers - ' . $this->title . '</h3>',
                     'type' => 'primary',
                     'showFooter' => false
                 ],

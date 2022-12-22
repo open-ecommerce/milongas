@@ -49,7 +49,7 @@ class SiteController extends Controller
         $this->view->registerMetaTag(
             [
                 'name'    => 'description',
-                'content' => 'internal managment system for the Destitute Asylum Seekers Drop-In.'
+                'content' => 'internal managment system for dancers Drop-In to milongas.'
             ],
             'description'
         );

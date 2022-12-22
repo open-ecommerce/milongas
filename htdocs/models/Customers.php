@@ -37,7 +37,7 @@ class Customers extends \yii\db\ActiveRecord {
     public function rules() {
         return [
             [['ConfirmationDate', 'Comments', 'Interpreter', 'NeedInterpreter', 'FirstDropin'], 'safe'],
-            [['Name', 'Gender', 'Eligible', 'Interpreter', 'NeedInterpreter'], 'required'],
+            [['Name', 'Gender'], 'required'],
             [['Name', 'Gender', 'Eligible', 'Comments', 'CommentsOld', 'Interpreter', 'NeedInterpreter'], 'string', 'max' => 255]
         ];
     }

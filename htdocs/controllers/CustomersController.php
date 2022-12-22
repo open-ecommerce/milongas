@@ -80,17 +80,7 @@ class CustomersController extends Controller {
         
         $today = date("Y-m-d");
         $beforeToday = 'DropinDate>' . $today;
-        $needDoctor = 0;
-        $needLawyer = 0;
-        
-        if(isset($_POST['Doctor'])) {
-            $needDoctor = 1;
-        }
-        if(isset($_POST['Lawyer'])) {
-            $needLawyer = 1;
-        }
 
-        
         if ($model->load(Yii::$app->request->post()) ) {
             $model->save();
             $current_id = $model->getPrimaryKey();            
@@ -99,8 +89,8 @@ class CustomersController extends Controller {
                 $attendance = new Attendance;
                 $attendance->CustomersID = $current_id;
                 $attendance->Dropin = 1;
-                $attendance->Doctor = $needDoctor;
-                $attendance->Lawyer = $needLawyer;
+                $attendance->Doctor = 1;
+                $attendance->Lawyer = 1;
                 $attendance->DropinTime = date("H:i:s");
                 $attendance->DropinDate = date("Y-m-d");
             }

@@ -28,7 +28,7 @@ class Dropin extends \yii\db\ActiveRecord
     {
         return [
             [['DropinDate', 'DropinDateFormated'], 'safe'],
-            [['MainEntrance'], 'string', 'max' => 10]
+            [['MainEntrance'], 'string', 'max' => 30]
         ];
     }
 
@@ -39,8 +39,8 @@ class Dropin extends \yii\db\ActiveRecord
     {
         return [
             'ID' => 'ID',
-            'DropinDate' => 'Dropin Date',
-            'MainEntrance' => 'Main Entrance',
+            'DropinDate' => 'Milonga Date',
+            'MainEntrance' => 'Venue',
         ];
     }
 

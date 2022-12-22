@@ -31,16 +31,6 @@ $deleteMsg = "Are you sure you want to delete this client dropin detail?";
             'vAlign' => 'middle',
         ],
         [
-            'class' => 'kartik\grid\BooleanColumn',
-            'attribute' => 'Doctor',
-            'vAlign' => 'middle',
-        ],
-        [
-            'class' => 'kartik\grid\BooleanColumn',
-            'attribute' => 'Lawyer',
-            'vAlign' => 'middle',
-        ],
-        [
             'attribute' => 'Observation',
             'vAlign' => 'middle',
         ],

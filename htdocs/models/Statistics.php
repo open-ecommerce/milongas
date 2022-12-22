@@ -33,7 +33,7 @@ class Statistics extends \yii\db\ActiveRecord
         return [
             [['DropinDate'], 'safe'],
             [['A-L', 'M-Z', 'SeenDoctor', 'SeenLawyer', 'Total'], 'integer'],
-            [['MainEntrance'], 'string', 'max' => 10]
+            [['MainEntrance'], 'string', 'max' => 30]
         ];
     }
 
@@ -43,8 +43,8 @@ class Statistics extends \yii\db\ActiveRecord
     public function attributeLabels()
     {
         return [
-            'DropinDate' => Yii::t('app', 'Dropin Date'),
-            'MainEntrance' => Yii::t('app', 'Main Entrance'),
+            'DropinDate' => Yii::t('app', 'Milonga Date'),
+            'MainEntrance' => Yii::t('app', 'Venue'),
             'A-L' => Yii::t('app', 'A  L'),
             'M-Z' => Yii::t('app', 'M  Z'),
             'SeenDoctor' => Yii::t('app', 'Seen Doctor'),

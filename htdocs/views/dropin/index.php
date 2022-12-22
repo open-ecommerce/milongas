@@ -7,7 +7,7 @@ use yii\grid\GridView;
 /* @var $searchModel app\models\DropinSearch */
 /* @var $dataProvider yii\data\ActiveDataProvider */
 
-$this->title = Yii::t('app', 'Dropins');
+$this->title = Yii::t('app', 'Milongas');
 $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="dropin-index">
@@ -16,7 +16,7 @@ $this->params['breadcrumbs'][] = $this->title;
     <?php // echo $this->render('_search', ['model' => $searchModel]); ?>
 
     <p>
-        <?= Html::a(Yii::t('app', 'Create Dropin'), ['create'], ['class' => 'btn btn-success']) ?>
+        <?= Html::a(Yii::t('app', 'Create Milonga'), ['create'], ['class' => 'btn btn-success']) ?>
     </p>
 
     <?= GridView::widget([

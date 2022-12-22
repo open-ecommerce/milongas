@@ -50,11 +50,7 @@ $iconsLawyer = [
                 <hr>
                 <div class="row col-md-12">
                     <div class="attendance-form">
-                        <?= $form->field($model, 'Dropin', ['template' => "Dropin and recived the voucher{input}\n{hint}\n{error}"])->checkbox() ?>
-                        <div class="row col-md-offset-0">
-                            <div class="col-md-6 col-md-offset-0" id="doctor-selection"><?= $form->field($model, 'Doctor')->multiselect($iconsDoctor, ['selector' => 'radio']); ?></div>
-                            <div class="col-md-6 col-md-offset-0" id="lawyer-selection"><?= $form->field($model, 'Lawyer')->multiselect($iconsLawyer, ['selector' => 'radio']); ?></div>
-                        </div>
+                        <?= $form->field($model, 'Dropin', ['template' => "Dropin to milonga{input}\n{hint}\n{error}"])->checkbox() ?>
                         <?= $form->field($model, 'Observation', ['template' => "Comments\n\n{input}\n{hint}\n{error}"])->textArea(array('rows' => 5, 'placeholder' => 'Comments about this specific dropin...')); ?>
                         <div class="form-group">
                             <?= Html::a('Cancel and Close', ['customers/index'], ['class' => 'btn btn-warning']) ?>

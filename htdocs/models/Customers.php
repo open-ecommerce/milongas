@@ -56,7 +56,7 @@ class Customers extends \yii\db\ActiveRecord {
             'CommentsOld' => 'Previous Comments',
             'Interpreter' => 'Language',
             'NeedInterpreter' => 'Interpreter',
-            'FirstDropin' => '1st Dropin',
+            'FirstDropin' => 'Last Milonga',
         ];
     }
 

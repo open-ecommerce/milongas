@@ -20,7 +20,7 @@ use kartik\helpers\Html;
               'displayFormat' => 'php:d M Y',
               'saveFormat' => 'php:Y-m-d',
           ]); ?>
-          <?= $form->field($model, 'MainEntrance')->dropDownList(['A-M' => 'A-M', 'M-Z' => 'M-Z', 'ALL' => 'ALL'], ['prompt' => '- Choose restriction']) ?>
+          <?= $form->field($model, 'MainEntrance')->dropDownList(['browns' => 'Browns', 'dutch-center' => 'Dutch center'], ['prompt' => '- Choose venue']) ?>
         </div>
       </div>
 

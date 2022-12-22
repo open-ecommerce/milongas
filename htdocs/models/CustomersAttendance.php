@@ -63,7 +63,7 @@ class CustomersAttendance extends \yii\db\ActiveRecord
             'Dropin' => 'Dropin',
             'DropinDate' => 'Dropin Date',
             'Observation' => 'Observation',
-            'FirstDropin' => '1st Dropin',
+            'FirstDropin' => 'Last Milonga',
         ];
     }
 }

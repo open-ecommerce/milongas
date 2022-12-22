@@ -16,8 +16,8 @@ use yii\helpers\ArrayHelper;
 
 $this->title = date('l jS \of F Y');
 
-$deleteTip = "Delete this client detail and all the attendances records.";
-$deleteMsg = "Are you sure you want to delete this client detail and all the attendances records?";
+$deleteTip = "Delete this dancer detail and all the attendances records.";
+$deleteMsg = "Are you sure you want to delete this dancer detail and all the attendances records?";
 
 $this->params['breadcrumbs'][] = $this->title;
 ?>
@@ -56,53 +56,13 @@ $this->params['breadcrumbs'][] = $this->title;
             'hAlign' => 'center',
         ],
         [
-            'class' => 'kartik\grid\BooleanColumn',
-            'attribute' => 'Eligible',
-            'label' => 'Eligible',
-        ],
-        [
-            'class' => 'kartik\grid\BooleanColumn',
-            'attribute' => 'NeedInterpreter',
-            'label' => 'Interp.',
-        ],
-//        [
-//            'attribute' => 'Interpreter',
-//            'vAlign' => 'middle',
-//            'width' => '70px',
-//            'value' => function ($model, $key, $index, $widget) {
-//                return $model->getLanguage();
-//            },
-//            'filterType' => GridView::FILTER_SELECT2,
-//            'filter' => ArrayHelper::map(Languages::find()->orderBy('Language')->asArray()->all(), 'ID', 'Language'),
-//            'filterWidgetOptions' => [
-//                'pluginOptions' => ['allowClear' => true],
-//            ],
-//            'filterInputOptions' => ['placeholder' => 'Any Interpreter'],
-//            'format' => 'raw'
-//        ],
-        [
-            'class' => 'kartik\grid\BooleanColumn',
+            'label' => 'Last Milonga',
+            'attribute' => 'FirstDropin',
+            'value' => 'FirstDropin',
+            'hAlign' => 'center',
             'vAlign' => 'middle',
-            'label' => 'Dropin',
-            'value' => function($model, $index, $dataColumn) {
-                return $model->getAttendances('Dropin');
-            },
-        ],
-        [
-            'class' => 'kartik\grid\TrivalentColumn',
-            'vAlign' => 'middle',
-            'label' => 'Doctor',
-            'value' => function($model, $index, $dataColumn) {
-                return $model->getAttendances('Doctor');
-            },
-        ],
-        [
-            'class' => 'kartik\grid\TrivalentColumn',
-            'vAlign' => 'middle',
-            'label' => 'Lawyer',
-            'value' => function($model, $index, $dataColumn) {
-                return $model->getAttendances('Lawyer');
-            },
+            'width' => '10px',
+            'format' => ['date', 'php:d M Y'],
         ],
         [
             'class' => 'kartik\grid\ActionColumn',
@@ -124,28 +84,6 @@ $this->params['breadcrumbs'][] = $this->title;
         ],
         [
                     'attribute' => 'Comments',
-                ],
-                [
-                    'label' => '1st Dropin',
-                    'attribute' => 'FirstDropin',
-                    'value' => 'FirstDropin',
-                    'hAlign' => 'center',
-                    'vAlign' => 'middle',
-                    'width' => '10px',
-                    'format' => ['date', 'php:d M Y'],
-                ],
-                [
-                    'label' => 'Confirmation',
-                    'attribute' => 'ConfirmationDate',
-                    'value' => 'ConfirmationDate',
-                    'hAlign' => 'center',
-                    'vAlign' => 'middle',
-                    'width' => '10px',
-                    'format' => ['date', 'php:d M Y'],
-                    'filter' => false,
-                ],
-                [
-                    'attribute' => 'CommentsOld',
                 ],
                 [
                     'class' => 'kartik\grid\ActionColumn',
@@ -173,17 +111,17 @@ $this->params['breadcrumbs'][] = $this->title;
                 'headerRowOptions' => ['class' => 'kartik-sheet-style'],
                 'filterRowOptions' => ['class' => 'kartik-sheet-style'],
                 'responsive' => true,
-                'beforeHeader' => [
-                    [
-                        'columns' => [
-                            ['content' => 'Clients\'s Details', 'options' => ['colspan' => 6, 'class' => 'text-center warning']],
-                            ['content' => 'Today\'s Dropin', 'options' => ['colspan' => 4, 'class' => 'text-center success']],
-                            ['content' => 'Clients\'s Comments', 'options' => ['colspan' => 3, 'class' => 'text-center warning']],
-                            ['content' => 'Editing Clients\'s', 'options' => ['colspan' => 2, 'class' => 'text-center warning']],
-                        ],
-                        'options' => ['class' => 'skip-export'] // remove this row from export
-                    ]
-                ],
+//                'beforeHeader' => [
+//                    [
+//                        'columns' => [
+//                            ['content' => 'Clients\'s Details', 'options' => ['colspan' => 6, 'class' => 'text-center warning']],
+//                            ['content' => 'Today\'s Dropin', 'options' => ['colspan' => 4, 'class' => 'text-center success']],
+//                            ['content' => 'Clients\'s Comments', 'options' => ['colspan' => 3, 'class' => 'text-center warning']],
+//                            ['content' => 'Editing Clients\'s', 'options' => ['colspan' => 2, 'class' => 'text-center warning']],
+//                        ],
+//                        'options' => ['class' => 'skip-export'] // remove this row from export
+//                    ]
+//                ],
                 'pjax' => true, // pjax is set to always true for this demo
                 'pjaxSettings' => [
                     'neverTimeout' => true,
